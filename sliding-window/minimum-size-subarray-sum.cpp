@@ -5,7 +5,7 @@ public:
         int j=0; // the ending point
         int length=0; // the window length
         int sum=0; //the sum of the window
-        int result = 0; // initial
+        int result = INT_MAX; // initial
         for (;j<nums.size();j++){
             sum +=nums[j];
             while(sum>=target){ 
