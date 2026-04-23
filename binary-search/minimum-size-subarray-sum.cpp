@@ -4,7 +4,7 @@ public:
         int i=0; // the start point
         int j=0; // the ending point
         int length=0; // the window length
-        int sum=0; //the sum of the window
+        int sum=nums[i]; //the sum of the window
         int result = 0; // initial
         for (;j<nums.size();j++){
             sum +=nums[j];
