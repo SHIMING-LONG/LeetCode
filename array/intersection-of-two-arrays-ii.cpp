@@ -7,6 +7,7 @@ public:
             counts[num]++;
         }
         vector<int> result;
+        //遍历nums2
         for(int num:nums2){
             if(counts[num]>0){
                 result.push_back(num);
