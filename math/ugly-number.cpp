@@ -2,10 +2,11 @@ class Solution {
 public:
 
     bool isUgly(int n) {
-        std::unordered_set<int> allowedFactors = {2, 3, 5};
-        for(int factor:allowedFactors){
-            while(n%factor==0){
-                n/=factor;
+        if (n <= 0) return false;
+        std::unordered_set<int> factors = {2, 3, 5};
+        for(int f: factors){
+            while(n%f==0){
+                n/=f;
             }
         }
         return n==1;     
